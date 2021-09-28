@@ -8,11 +8,9 @@
 </head>
 <body>
     {% for blog in blogs: %}
-
         <h1>{{ blog["title"] }}</h1>
         <h2>{{blog["contents"]}}</h2>
         <p>To read more go to <a href={{ blog["link"] }}>this link.</a></p>
-
     {% endfor %}
 </body>
 </html>
